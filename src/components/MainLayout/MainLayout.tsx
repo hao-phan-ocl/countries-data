@@ -64,52 +64,52 @@ export default function MainLayout({ countries }: MainLayoutType) {
   }
 
   return (
-    <Paper sx={{ minHeight: '100%', transition: '.5s' }}>
-      <Container
-        maxWidth="lg"
+    // <Paper sx={{ minHeight: '100%', transition: '.5s' }}>
+    <Container
+      maxWidth="lg"
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        paddingTop: '150px',
+        height: '100%',
+      }}
+    >
+      <Typography mb={8} variant="h1" sx={{ textShadow: '#000 0 0 3px' }}>
+        {location.pathname === '/' ? 'Countries Data' : 'Your List'}
+      </Typography>
+      <Box
         sx={{
           display: 'flex',
+          flexDirection: 'row',
           alignItems: 'center',
-          flexDirection: 'column',
-          padding: '150px 0',
-          minHeight: '100vh',
+          justifyContent: 'center',
+          position: 'relative',
+          width: '100%',
         }}
       >
-        <Typography mb={8} variant="h1" sx={{ textShadow: '#000 0 0 3px' }}>
-          {location.pathname === '/' ? 'Countries Data' : 'Your List'}
-        </Typography>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-            position: 'relative',
-            width: '100%',
-          }}
-        >
-          <SearchBar />
-          <SortBar />
-        </Box>
-        {location.pathname === '/favorite' && !favCountries.length ? (
-          <TableContainer>
-            <Paper elevation={10}>
-              <Table sx={{ mt: '20px' }}>
-                <TableHead />
-                <TableBody>
-                  <TableRow>
-                    <TableCell sx={{ borderBottom: '0' }}>
-                      <Typography>Your country list is empty !</Typography>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </Paper>
-          </TableContainer>
-        ) : (
-          <CountriesTable countries={handleSort(handleSearch())} />
-        )}
-      </Container>
-    </Paper>
+        <SearchBar />
+        <SortBar />
+      </Box>
+      {location.pathname === '/favorite' && !favCountries.length ? (
+        <TableContainer>
+          <Paper elevation={10}>
+            <Table sx={{ mt: '20px' }}>
+              <TableHead />
+              <TableBody>
+                <TableRow>
+                  <TableCell sx={{ borderBottom: '0' }}>
+                    <Typography>Your list is empty!</Typography>
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </Paper>
+        </TableContainer>
+      ) : (
+        <CountriesTable countries={handleSort(handleSearch())} />
+      )}
+    </Container>
+    // </Paper>
   )
 }

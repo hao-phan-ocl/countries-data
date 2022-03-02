@@ -1,0 +1,42 @@
+.footer__wrapper {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+
+  .text__box {
+    display: flex;
+    gap: 7px;
+
+    .text {
+      font-size: 20px;
+    }
+
+    .text-name {
+      font-weight: 600;
+    }
+  }
+
+  .icon__box {
+    display: flex;
+    gap: 7px;
+
+    .icon {
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    .icon-linkedin {
+      &:hover {
+        color: #0e76a8;
+      }
+    }
+
+    .icon-github {
+      &:hover {
+        color: #171515;
+      }
+    }
+  }
+}
