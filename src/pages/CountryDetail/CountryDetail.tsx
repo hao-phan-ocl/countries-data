@@ -24,10 +24,10 @@ export default function CountryDetail() {
 
   useEffect(() => {
     dispatch(fetchCountry(countryName as string))
+    window.scrollTo(0, 0)
   }, [countryName, dispatch])
 
   return (
-    // <Paper elevation={10} sx={{ transition: '.5s' }}>
     <Container maxWidth="sm" sx={{ paddingTop: '150px' }}>
       {loading ? (
         <LoadingPage type="country" />
@@ -121,6 +121,5 @@ export default function CountryDetail() {
         </>
       )}
     </Container>
-    // </Paper>
   )
 }

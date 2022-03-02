@@ -64,7 +64,6 @@ export default function MainLayout({ countries }: MainLayoutType) {
   }
 
   return (
-    // <Paper sx={{ minHeight: '100%', transition: '.5s' }}>
     <Container
       maxWidth="lg"
       sx={{
@@ -110,6 +109,5 @@ export default function MainLayout({ countries }: MainLayoutType) {
         <CountriesTable countries={handleSort(handleSearch())} />
       )}
     </Container>
-    // </Paper>
   )
 }

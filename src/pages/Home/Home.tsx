@@ -11,6 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(fetchCountries())
+    window.scrollTo(0, 0)
   }, [dispatch])
 
   return <MainLayout countries={countries} />
