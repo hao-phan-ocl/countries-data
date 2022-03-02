@@ -1,6 +1,6 @@
 # Countries Data
 
-    https://haophan-countries.netlify.app/
+    https://haophan-countries-data.netlify.app/
 
 # Features
 
