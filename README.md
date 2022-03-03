@@ -4,7 +4,7 @@
 
 # Features
 
-    Displaying a list 250 countries
+    Displaying a list of countries
 
     Retrieving detailed information of each country
 
