@@ -17,6 +17,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/hao-phan-06b628110/"
           target="_blank"
           rel="noreferrer"
+          aria-label="Linkedin"
         >
           <LinkedIn className="icon icon-linkedin" />
         </Link>
@@ -24,6 +25,7 @@ export default function Footer() {
           href="https://github.com/nguyenhaophan/countries-data"
           target="_blank"
           rel="noreferrer"
+          aria-label="Github"
         >
           <GitHub className="icon icon-github" />
         </Link>
