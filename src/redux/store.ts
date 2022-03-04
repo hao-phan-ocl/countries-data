@@ -5,22 +5,26 @@ import { PaletteMode } from '@mui/material'
 
 import rootReducer, { RootState } from './rootReducer'
 import { SORT_NAME_AZ } from '../components/SortBar/SortBar'
+import { Country } from '../types'
 
 // Check stored countries from Local Storage
-let storedFavCountries
+let storedFavCountries: Country[]
 if (localStorage.getItem('favCountries')) {
   storedFavCountries = JSON.parse(localStorage.getItem('favCountries') || '')
-}
+} else storedFavCountries = []
 
 // Check theme state from Local Storage
-const persistedTheme = localStorage.getItem('theme')
+let persistedTheme: PaletteMode
+if (localStorage.getItem('theme')) {
+  persistedTheme = localStorage.getItem('theme') as PaletteMode
+} else persistedTheme = 'light'
 
 const initialState: RootState = {
   countries: { countries: [], loading: true, error: null },
   country: { loading: true },
-  favorite: { favCountries: storedFavCountries ? storedFavCountries : [] },
+  favorite: { favCountries: storedFavCountries },
   search: { inputValue: '' },
-  theme: { theme: (persistedTheme ? persistedTheme : 'light') as PaletteMode },
+  theme: { theme: persistedTheme },
   sort: { value: SORT_NAME_AZ },
 }
 
