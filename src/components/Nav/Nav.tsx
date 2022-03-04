@@ -13,8 +13,15 @@ export default function Header() {
   const dispatch = useDispatch()
   const favCountries = useSelector((state: RootState) => state.favorite.favCountries)
 
+  function handleHomeClick() {
+    navigate('/')
+    // clear search input
+    dispatch(addSearchInput(''))
+  }
+
   function handleFavoriteClick() {
     navigate('/favorite')
+    // clear search input
     dispatch(addSearchInput(''))
   }
 
@@ -29,7 +36,7 @@ export default function Header() {
       }}
     >
       <Box sx={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        <IconButton color="primary" onClick={() => navigate('/')}>
+        <IconButton color="primary" onClick={handleHomeClick}>
           <HomeIcon fontSize="large" />
         </IconButton>
         <IconButton color="primary" onClick={handleFavoriteClick}>

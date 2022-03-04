@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import { addFavorite, removeFavorite } from '../../redux/actions/favorite'
 import { RootState } from '../../redux/rootReducer'
 import { Country } from '../../types'
+import { addSearchInput } from '../../redux/actions/search'
 
 type MyButtonProps = {
   country?: Country
@@ -33,6 +34,8 @@ export default function MyButton({ country, type }: MyButtonProps) {
 
   function handleBack() {
     navigate('/')
+    // clear search input
+    dispatch(addSearchInput(''))
   }
 
   return (
