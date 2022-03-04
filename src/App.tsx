@@ -9,8 +9,8 @@ import Home from './pages/Home/Home'
 import Favorite from './pages/Favorite/Favorite'
 import Nav from './components/Nav/Nav'
 import { RootState } from './redux/rootReducer'
-import './App.scss'
 import Footer from './components/Footer/Footer'
+import './App.scss'
 
 function App() {
   const themeState = useSelector((state: RootState) => state.theme.theme)

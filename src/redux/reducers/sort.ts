@@ -1,3 +1,4 @@
+import { SORT_NAME_AZ } from '../../components/SortBar/SortBar'
 import { SortAction, SORTING } from '../actions/sort'
 
 export type InitialState = {
@@ -5,7 +6,7 @@ export type InitialState = {
 }
 
 const initialState: InitialState = {
-  value: '',
+  value: SORT_NAME_AZ,
 }
 
 function sortReducer(state = initialState, action: SortAction): InitialState {

@@ -4,6 +4,7 @@ import thunk from 'redux-thunk'
 import { PaletteMode } from '@mui/material'
 
 import rootReducer, { RootState } from './rootReducer'
+import { SORT_NAME_AZ } from '../components/SortBar/SortBar'
 
 // Check stored countries from Local Storage
 let storedFavCountries
@@ -20,7 +21,7 @@ const initialState: RootState = {
   favorite: { favCountries: storedFavCountries ? storedFavCountries : [] },
   search: { inputValue: '' },
   theme: { theme: (persistedTheme ? persistedTheme : 'light') as PaletteMode },
-  sort: { value: '' },
+  sort: { value: SORT_NAME_AZ },
 }
 
 const store = createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(thunk)))
