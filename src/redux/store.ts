@@ -9,12 +9,14 @@ import { Country } from '../types'
 
 // Check stored countries from Local Storage
 let storedFavCountries: Country[]
+
 if (localStorage.getItem('favCountries')) {
   storedFavCountries = JSON.parse(localStorage.getItem('favCountries') || '')
 } else storedFavCountries = []
 
 // Check theme state from Local Storage
 let persistedTheme: PaletteMode
+
 if (localStorage.getItem('theme')) {
   persistedTheme = localStorage.getItem('theme') as PaletteMode
 } else persistedTheme = 'light'
