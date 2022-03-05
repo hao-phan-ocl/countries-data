@@ -54,6 +54,16 @@ export default function CountryDetail() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>Area</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                {country?.area.toLocaleString('en')} km<sup>2</sup>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography>Languages</Typography>
             </AccordionSummary>
             <AccordionDetails>

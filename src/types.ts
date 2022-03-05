@@ -15,6 +15,7 @@ export type Country = {
   borders: string[]
   population: number
   timezones: string[]
+  area: number
   flags: {
     svg: string
   }
