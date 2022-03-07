@@ -38,14 +38,13 @@ export default function CountryDetail() {
             alt={country?.name.common}
             style={{ width: '100%', borderRadius: '10px 10px 0 0' }}
           />
-
           <Paper sx={{ display: 'flex', justifyContent: 'center', padding: '7px 0' }}>
             <Typography variant="h5" color="text.primary" textAlign={'center'} fontWeight={600}>
               {country?.name.common}
             </Typography>
           </Paper>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Capital</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -53,7 +52,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Area</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -63,7 +62,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Languages</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -74,7 +73,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Borders</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -88,7 +87,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Population</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -96,7 +95,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Currencies</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -107,7 +106,7 @@ export default function CountryDetail() {
             </AccordionDetails>
           </Accordion>
           <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon color="primary" />}>
               <Typography>Time Zones</Typography>
             </AccordionSummary>
             <AccordionDetails>
