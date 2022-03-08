@@ -20,7 +20,7 @@
 
     https://restcountries.com/
 
-# Technologies
+# Technology stacks
 
     React
 
