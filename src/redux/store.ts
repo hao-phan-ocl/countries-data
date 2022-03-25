@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import thunk from 'redux-thunk'
 import { PaletteMode } from '@mui/material'
+import thunk from 'redux-thunk'
 
 import rootReducer, { RootState } from './rootReducer'
 import { SORT_NAME_AZ } from '../components/SortBar/SortBar'
