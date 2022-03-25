@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
-import HomeIcon from '@mui/icons-material/Home'
-import { AppBar, Badge, Box, IconButton } from '@mui/material'
-import NotificationsIcon from '@mui/icons-material/Notifications'
 import { useDispatch, useSelector } from 'react-redux'
+import { AppBar, Badge, Box, IconButton } from '@mui/material'
+import HomeIcon from '@mui/icons-material/Home'
+import NotificationsIcon from '@mui/icons-material/Notifications'
 
 import { RootState } from '../../redux/rootReducer'
 import SwitchButton from '../SwitchButton/SwitchButton'
