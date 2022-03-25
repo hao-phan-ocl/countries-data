@@ -1,6 +1,6 @@
 import { styled } from '@mui/material/styles'
-import Switch from '@mui/material/Switch'
 import { useDispatch, useSelector } from 'react-redux'
+import Switch from '@mui/material/Switch'
 
 import { themeToggle } from '../../redux/actions/theme'
 import { RootState } from '../../redux/rootReducer'
