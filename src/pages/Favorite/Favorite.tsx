@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 
-import MainLayout from '../../components/MainLayout/MainLayout'
 import { RootState } from '../../redux/rootReducer'
+import MainLayout from '../../components/MainLayout/MainLayout'
 
 export default function Favorite() {
   const favCountries = useSelector((state: RootState) => state.favorite.favCountries)
