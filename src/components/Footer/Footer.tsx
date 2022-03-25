@@ -1,5 +1,5 @@
-import { GitHub, LinkedIn } from '@mui/icons-material'
 import { Typography, Box, Link } from '@mui/material'
+import { GitHub, LinkedIn } from '@mui/icons-material'
 
 import './Footer.scss'
 
