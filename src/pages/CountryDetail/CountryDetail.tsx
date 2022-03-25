@@ -13,9 +13,9 @@ import {
 } from '@mui/material'
 
 import MyButton from '../../components/MyButton/MyButton'
+import LoadingPage from '../../components/LoadingPage/LoadingPage'
 import { RootState } from '../../redux/rootReducer'
 import { fetchCountry } from '../../redux/actions/fetchCountry'
-import LoadingPage from '../../components/LoadingPage/LoadingPage'
 
 export default function CountryDetail() {
   const { countryName } = useParams()
