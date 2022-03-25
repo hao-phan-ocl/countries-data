@@ -1,8 +1,8 @@
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'
+import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn'
 import { Button, IconButton, Typography } from '@mui/material'
 import { pink } from '@mui/material/colors'
 import { useDispatch, useSelector } from 'react-redux'
-import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn'
 import { useNavigate } from 'react-router-dom'
 
 import { addFavorite, removeFavorite } from '../../redux/actions/favorite'
