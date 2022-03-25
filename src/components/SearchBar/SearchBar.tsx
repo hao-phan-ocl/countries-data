@@ -1,7 +1,7 @@
-import SearchIcon from '@mui/icons-material/Search'
 import { styled, alpha } from '@mui/material/styles'
 import { InputBase } from '@mui/material'
 import { useDispatch } from 'react-redux'
+import SearchIcon from '@mui/icons-material/Search'
 import debounce from 'lodash.debounce'
 
 import { addSearchInput } from '../../redux/actions/search'
