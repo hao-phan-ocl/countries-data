@@ -5,10 +5,10 @@ import { pink } from '@mui/material/colors'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
-import { addFavorite, removeFavorite } from '../../redux/actions/favorite'
 import { RootState } from '../../redux/rootReducer'
 import { Country } from '../../types'
 import { addSearchInput } from '../../redux/actions/search'
+import { addFavorite, removeFavorite } from '../../redux/actions/favorite'
 
 type MyButtonProps = {
   country?: Country
