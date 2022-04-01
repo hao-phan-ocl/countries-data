@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchCountries } from '../../redux/actions/fetchCountries'
 import { RootState } from '../../redux/rootReducer'
+import { fetchCountries } from '../../redux/actions/fetchCountries'
 import MainLayout from '../../components/MainLayout/MainLayout'
 
 export default function Home() {
