@@ -24,7 +24,7 @@
 
     React
 
-    React-router
+    React-router-dom
 
     Typescript
 
@@ -33,8 +33,6 @@
     Redux-thunk
 
     Material UI
-
-    Prettier
 
 # Preview
 
