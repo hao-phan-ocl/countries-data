@@ -2,6 +2,12 @@
 
     https://haophan-countries-data.netlify.app/
 
+# Docker
+
+    docker pull haophan7/countries-data:v1
+
+    docker run --rm -p 9000:3000 haophan7/countries-data:v1
+
 # Features
 
     Displaying a list of countries
@@ -33,6 +39,8 @@
     Redux-thunk
 
     Material UI
+
+    Docker
 
 # Preview
 
