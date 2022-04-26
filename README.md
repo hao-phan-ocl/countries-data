@@ -4,8 +4,9 @@
 
 # Docker
 
-    docker pull haophan7/countries-data:v1
+    From your command line, run these 2 commands:
 
+    docker pull haophan7/countries-data:v1i
     docker run --rm -p 3000:3000 haophan7/countries-data:v1
 
 # Features
