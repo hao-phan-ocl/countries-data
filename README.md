@@ -9,6 +9,8 @@
     docker pull haophan7/countries-data:v1
     docker run --rm -p 3000:3000 haophan7/countries-data:v1
 
+    App can now be viewed at http://localhost:3000/
+
 # Features
 
     Displaying a list of countries
