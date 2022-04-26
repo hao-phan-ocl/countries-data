@@ -6,7 +6,7 @@
 
     docker pull haophan7/countries-data:v1
 
-    docker run --rm -p 9000:3000 haophan7/countries-data:v1
+    docker run --rm -p 3000:3000 haophan7/countries-data:v1
 
 # Features
 
