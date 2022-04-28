@@ -31,9 +31,9 @@ https://restcountries.com/
 - Typescript
 - Redux
 - Redux-thunk
-- Material UI
 - Docker
 - Github actions
+- Material UI
 
 # Preview
 
