@@ -9,7 +9,7 @@ on:
   
 jobs:
   build:
-    name: Lint, test, build
+    name: Lint, build, deploy
     runs-on: ubuntu-latest
     steps:
       - name: Setup node
@@ -25,9 +25,6 @@ jobs:
 
       - name: Linting
         run: npm run lint
-
-      - name: Testing
-        run: npm test
 
       - name: Building
         run: npm run build --production
