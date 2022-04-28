@@ -1,0 +1,32 @@
+name: countries-data
+
+on:
+  push:
+    branches: [master]
+
+  pull_request: [master]
+  
+jobs:
+  build:
+    name: Lint, test, build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Install
+        run: npm install
+
+      - name: Linting
+        run: npm run lint
+
+      - name: Testing
+        run: npm test
+
+      - name: Building
+        run: npm run build --production
