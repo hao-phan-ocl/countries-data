@@ -2,9 +2,10 @@ name: countries-data
 
 on:
   push:
-    branches: [master]
+    branches: [master, dev]
 
-  pull_request: [master]
+  pull_request: 
+    branches: [master, dev]
   
 jobs:
   build:
