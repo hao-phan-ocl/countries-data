@@ -11,11 +11,15 @@ jobs:
   build:
     name: Lint, build, deploy
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 16, 18]
+
     steps:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: ${{ matrix.node }}
 
       - name: Checkout source code
         uses: actions/checkout@v3
