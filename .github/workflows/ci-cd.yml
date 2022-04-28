@@ -2,11 +2,13 @@ name: countries-data
 
 on:
   push:
+    paths-ignore:
+      - 'README.md'
     branches: [master, dev]
 
-  pull_request: 
+  pull_request:
     branches: [master, dev]
-  
+
 jobs:
   build:
     name: Lint, build, deploy
