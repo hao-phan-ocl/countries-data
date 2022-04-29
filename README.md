@@ -38,7 +38,5 @@ https://restcountries.com/
 # Preview
 
 ![homepage](media/home.png)
-
 ![country](media/country.png)
-
 ![favorite](media/favorite.png)
