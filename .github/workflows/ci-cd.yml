@@ -43,6 +43,10 @@ jobs:
       - name: Building
         run: npm run build --production
 
+  deploy:
+    name: Deploying to Netlify
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploying to Netlify
         uses: netlify/actions/cli@master
         env:
@@ -50,3 +54,14 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
           args: deploy --dir=build --prod
+
+  slackNotification:
+    name: Slack Notification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notify
+        uses: rtCamp/action-slack-notify@v2.2.0
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+
