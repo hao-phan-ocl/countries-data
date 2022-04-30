@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build, Deploy, Slack notify
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -32,7 +32,7 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os  }}-node-
+            ${{ runner.os }}-node-
 
       - name: Install
         run: npm ci
@@ -43,10 +43,6 @@ jobs:
       - name: Building
         run: npm run build --production
 
-  deploy:
-    name: Deploying to Netlify
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploying to Netlify
         uses: netlify/actions/cli@master
         env:
@@ -55,10 +51,6 @@ jobs:
         with:
           args: deploy --dir=build --prod
 
-  slackNotification:
-    name: Slack Notification
-    runs-on: ubuntu-latest
-    steps:
       - name: Slack Notify
         uses: rtCamp/action-slack-notify@v2.2.0
         env:
