@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { createTheme, PaletteMode, ThemeProvider, Paper } from '@mui/material'
+import { createTheme, PaletteMode, ThemeProvider, Paper, Stack } from '@mui/material'
 import { useMemo } from 'react'
 import { grey } from '@mui/material/colors'
 
@@ -59,19 +59,17 @@ function App() {
         <Paper
           sx={{
             transition: '.5s',
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
           }}
         >
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/favorite" element={<Favorite />} />
-            <Route path="/countries/:countryName" element={<CountryDetail />} />
-          </Routes>
-          <Footer />
+          <Stack minHeight="100vh">
+            <Nav />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/favorite" element={<Favorite />} />
+              <Route path="/countries/:countryName" element={<CountryDetail />} />
+            </Routes>
+            <Footer />
+          </Stack>
         </Paper>
       </Router>
     </ThemeProvider>

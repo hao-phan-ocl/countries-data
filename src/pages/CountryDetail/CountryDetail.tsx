@@ -28,7 +28,7 @@ export default function CountryDetail() {
   }, [countryName, dispatch])
 
   return (
-    <Container maxWidth="sm" sx={{ paddingTop: '150px' }}>
+    <Container maxWidth={false} sx={{ paddingTop: '150px', maxWidth: '550px' }}>
       {loading ? (
         <LoadingPage type="country" />
       ) : (
