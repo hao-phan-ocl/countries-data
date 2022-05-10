@@ -4,11 +4,11 @@ import { createTheme, PaletteMode, ThemeProvider, Paper, Stack } from '@mui/mate
 import { useMemo } from 'react'
 import { grey } from '@mui/material/colors'
 
+import { RootState } from './redux/rootReducer'
 import CountryDetail from './pages/CountryDetail/CountryDetail'
 import Home from './pages/Home/Home'
 import Favorite from './pages/Favorite/Favorite'
 import Nav from './components/Nav/Nav'
-import { RootState } from './redux/rootReducer'
 import Footer from './components/Footer/Footer'
 
 function App() {
