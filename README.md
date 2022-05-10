@@ -6,8 +6,8 @@ https://haophan-countries-data.netlify.app/
 
 From your command line, run these 2 commands:
 
-    docker pull haophan7/countries-data:v1
-    docker run --rm -p 3000:3000 haophan7/countries-data:v1
+    docker pull haophan7/countries-data:v2
+    docker run --rm -p 3000:3000 haophan7/countries-data:v2
 
 App can now be viewed at http://localhost:3000/
 
