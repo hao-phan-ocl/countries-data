@@ -10,7 +10,16 @@ export default function Footer() {
         <Typography className="text" sx={{ fontSize: '20px' }}>
           Developed by
         </Typography>
-        <Typography className="text text-name">Hao Phan</Typography>
+        <Link
+          title="My Portfolio"
+          href="https://haophan.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Linkedin"
+          underline="hover"
+        >
+          <Typography className="text text-name">Hao Phan</Typography>
+        </Link>
       </Box>
       <Box className="icon__box" sx={{ display: 'flex', gap: '7px' }}>
         <Link
