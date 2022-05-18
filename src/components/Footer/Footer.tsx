@@ -16,7 +16,7 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
           aria-label="Linkedin"
-          underline="hover"
+          sx={{ ':hover': { textDecoration: 'none' }, textDecoration: 'underline' }}
         >
           <Typography className="text text-name">Hao Phan</Typography>
         </Link>
